@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="47dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/myColorBackground">
+    <com.voyd.safernote.SuperButton
+        android:id="@+id/finish"
+        android:background="@drawable/back"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="17dp"/>
+    <TextView
+        android:id="@+id/titlebarText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textSize="22sp"/>
+    <com.voyd.safernote.SuperButton
+        android:id="@+id/save"
+        android:background="@drawable/save"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        />
+</LinearLayout>

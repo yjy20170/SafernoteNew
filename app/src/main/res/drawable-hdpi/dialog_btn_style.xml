@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+        
+    <!-- 按钮按下时的样式 -->  
+    <item android:state_pressed="true">
+        <!-- shape：按钮形状 -->
+        <shape android:shape="rectangle">
+            <!-- solid：背景填充颜色 -->  
+            <solid android:color="@color/myColorBackground2" />
+            <!-- gradient：背景渐变颜色，如果不想按钮只有一种颜色，可以使用这个标签 -->  
+            <!-- gradient android:startColor="#dddddd" android:centerColor="#999999" android:endColor="#555555"   
+                android:angle="0" /-->  
+            <!-- corners：圆角 -->  
+            <corners android:radius="3dip" />  
+            <!-- stroke：边框 -->  
+            <stroke android:width="0dip" android:color="@color/myColorTitle" />
+            <!-- padding：内边距 -->  
+            <padding android:left="8dp" android:top="8dp"   
+                android:right="8dp" android:bottom="8dp" />   
+        </shape>  
+    </item>  
+    <!-- 按钮正常时的样式 -->  
+    <item>
+        <!-- shape：按钮形状 -->  
+        <shape android:shape="rectangle">
+            <!-- solid：背景填充颜色 -->
+            <solid android:color="@color/myColorBackground" />
+            <!-- gradient：背景渐变颜色，如果不想按钮只有一种颜色，可以使用这个标签 -->  
+            <!-- gradient android:startColor="#dddddd" android:centerColor="#999999" android:endColor="#555555"   
+                android:angle="0" /-->  
+            <!-- corners：圆角 -->  
+            <corners android:radius="5dip" />  
+            <!-- stroke：边框 -->  
+            <stroke android:width="1dip" android:color="@color/myColorTitle" />
+            <!-- padding：内边距 -->  
+            <padding android:left="8dp" android:top="8dp"   
+                android:right="8dp" android:bottom="8dp" />   
+        </shape>  
+    </item>  
+    <!-- 按钮获得焦点时的样式 -->  
+    <!-- item android:state_focused="true"-->  
+</selector>

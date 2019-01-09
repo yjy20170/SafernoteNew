@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="17dp"
+        android:textSize="22sp"
+        android:text="放弃修改?"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/dialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="3dp"
+            android:background="@drawable/dialog_btn_style"
+            android:text="取消"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/dialogSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_btn_style"
+            android:text="保存"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/dialogNosave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dialogSave"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/dialog_btn_style"
+            android:text="放弃"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

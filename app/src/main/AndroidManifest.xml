@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voyd.safernote"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-sdk android:targetSdkVersion="21" />
+    <application
+        android:name="com.voyd.safernote.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.voyd.safernote.activity_locked"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_1"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:windowSoftInputMode="stateUnchanged|adjustNothing"
+            android:name="com.voyd.safernote.activity_2"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_setPassword"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_importExportDb"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_testNewDb"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_settings"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_statistic"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.voyd.safernote.activity_search"
+            android:excludeFromRecents="true">
+        </activity>
+    </application>
+
+</manifest>
