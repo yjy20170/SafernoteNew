@@ -34,7 +34,8 @@ public class AES {
     private static byte[] getRawKey(byte[] seed) throws Exception {
         KeyGenerator kgen = KeyGenerator.getInstance("AES");
         //需加上  『,"Crypto"』，否则报错 javax.crypto.BadPaddingException: pad block corrupted
-        SecureRandom sr = SecureRandom.getInstance("SHA1PRNG","Crypto");
+        //再版 "Crypto" ->
+        SecureRandom sr = SecureRandom.getInstance("SHA1PRNG",new CryptoProvider());
         sr.setSeed(seed);
         kgen.init(128, sr); // 192 and 256 bits may not be available     
         SecretKey skey = kgen.generateKey();
